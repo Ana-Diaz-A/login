@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title> <!--TITLE-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"> <!--FONTS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> <!--Binding this stylesheet ensures that the styles needed to display Toastify notifications are applied correctly on the page-->
+    <link rel="stylesheet" href="style.css"> <!--CSS-->
+  </head>
+
+  <body>
+    <div id="left">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo"> <!--LOGO-->
+        Cat Shop
+      </div>
+
+      <div class="sign-up">
+        <h3>Sign Up</h3>
+        <form>  <!--FORM-->
+          <div class="form-field">
+            <span class="material-symbols-outlined"> mail </span>
+            <input type="email" placeholder="Email" required />
+          </div>
+
+          <div class="form-field">
+            <span class="material-symbols-outlined"> lock </span>
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="material-symbols-outlined eye-icon" onclick="togglePasswordVisibility()"> visibility </span>
+          </div>
+
+          <div id="pass-meter">
+            <span id="meter-outer">
+              <span id="meter-inner"></span>
+            </span>
+            <span id="pwd-desc"></span>
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <a href="#">Forgot password?</a>
+
+        <div id="divider">
+          <div></div>
+          <span id="divider-text"> or </span>
+          <div></div>
+        </div>
+
+        <div id="auth-btns">
+          <img src="images/google-btn.svg" alt="Google Sign Up">
+          <img src="images/facebook-btn.svg" alt="Facebook Sign Up">
+        </div>
+      </div>
+    </div>
+
+    <div id="right"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> <!--Toastify-js is a JavaScript library that allows you to create and display toast notifications easily. Toast notifications are small messages that appear temporarily on the screen, typically at the bottom or top, to provide feedback or information to the user-->
+    <script src="script.js"></script> <!--JS-->
+  </body>
+</html>
